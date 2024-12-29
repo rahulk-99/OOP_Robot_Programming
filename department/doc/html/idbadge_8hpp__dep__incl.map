@@ -1,0 +1,7 @@
+<map id="idbadge.hpp" name="idbadge.hpp">
+<area shape="rect" id="node1" title="Declaration of the IDBadge class, which represents an identification badge issued to an employee." alt="" coords="163,5,265,32"/>
+<area shape="rect" id="node2" href="$employee_8hpp.html" title="Employee is the base abstract class for derived classes developer and manager as it has one oure virt..." alt="" coords="157,80,271,107"/>
+<area shape="rect" id="node3" href="$department_8hpp.html" title="This is the Department class which aggregates multiple employees through shared pointers...." alt="" coords="5,155,132,181"/>
+<area shape="rect" id="node4" href="$developer_8hpp.html" title="Declaration of the Developer class derived from employee, representing a software developer employee ..." alt="" coords="157,155,271,181"/>
+<area shape="rect" id="node5" href="$manager_8hpp.html" title="Declaration of the Manager class, derived from the Employee class. This class models a manager&#39;s resp..." alt="" coords="295,155,402,181"/>
+</map>

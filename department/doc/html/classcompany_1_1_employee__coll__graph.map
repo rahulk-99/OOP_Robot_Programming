@@ -1,0 +1,4 @@
+<map id="company::Employee" name="company::Employee">
+<area shape="rect" id="node1" title="Represents an employee in the company." alt="" coords="5,95,160,121"/>
+<area shape="rect" id="node2" href="$classcompany_1_1_i_d_badge.html" title="Represents an identification badge assigned to an employee in the company." alt="" coords="11,5,155,32"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="company::Employee" name="company::Employee">
+<area shape="rect" id="node1" title="Represents an employee in the company." alt="" coords="94,5,249,32"/>
+<area shape="rect" id="node2" href="$classcompany_1_1_developer.html" title="Represents a software developer in the company, inheriting from the Employee base class." alt="" coords="5,80,161,107"/>
+<area shape="rect" id="node3" href="$classcompany_1_1_manager.html" title="Represents a manager in a company, with responsibilities for supervising a team and overseeing projec..." alt="" coords="186,80,333,107"/>
+</map>

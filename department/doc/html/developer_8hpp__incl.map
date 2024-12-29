@@ -1,0 +1,10 @@
+<map id="developer.hpp" name="developer.hpp">
+<area shape="rect" id="node1" title="Declaration of the Developer class derived from employee, representing a software developer employee ..." alt="" coords="241,5,356,32"/>
+<area shape="rect" id="node2" href="$employee_8hpp.html" title="Employee is the base abstract class for derived classes developer and manager as it has one oure virt..." alt="" coords="124,80,239,107"/>
+<area shape="rect" id="node3" title=" " alt="" coords="220,229,279,256"/>
+<area shape="rect" id="node8" title=" " alt="" coords="336,80,379,107"/>
+<area shape="rect" id="node4" title=" " alt="" coords="5,155,83,181"/>
+<area shape="rect" id="node5" href="$idbadge_8hpp.html" title="Declaration of the IDBadge class, which represents an identification badge issued to an employee." alt="" coords="107,155,210,181"/>
+<area shape="rect" id="node6" href="$date_8hpp.html" title="Declaration of the Date class for representing and validating date values." alt="" coords="117,229,195,256"/>
+<area shape="rect" id="node7" title=" " alt="" coords="113,304,199,331"/>
+</map>

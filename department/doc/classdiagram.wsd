@@ -1,0 +1,94 @@
+@startuml "Company"
+
+skinparam classAttributeIconSize 0
+skinparam class {
+    BackgroundColor White
+    ArrowColor Black
+    BorderColor Black
+}
+
+Package company <<Frame>>{
+' Abstract base class for all employees
+abstract class Employee{
+    # name_: std::string
+    # salary_: double
+    # id_badge_: std::unique_ptr<company::IDBadge>
+    # performance_percentage: double
+    + Employee(name: std::string, salary: double, badge: IDBadge)
+    + perform_task() const : void "Pure Virtual"
+    + attend_meeting() : const : void "Virtual"
+    + receive_salary() : void "Virtual"
+    + get_name(): std::string
+    + get_badge(): IDBadge
+    + get_performance_percentage(): double
+    + set_performance_percentage(percentage: double): void
+    
+}
+
+' Derived class for managers
+class Manager{
+    - team_size_: unsigned short
+    - number_of_projects_: unsigned short
+    - team_members_: std::vector<std::shared_ptr<Employee>>
+    + Manager(name: std::string, salary: double, badge: IDBadge, team_size: unsigned short, projects: unsigned short)
+    + perform_task(): void <<override>>
+    + attend_meeting(): void <<override>>
+    + receive_salary(salary: double): void <<override>>
+    + set_team_members(team: std::vector<std::shared_ptr<Employee>>): void
+    + conduct_performance_review(): void
+}
+
+' Derived class for developers
+class Developer {
+    - programming_languages_: std::set<std::string> 
+    - current_project_: string
+    + Developer(name: std::string, salary: double, badge: IDBadge)
+    + perform_task(): void <<override>>
+    + attend_meeting(): void <<override>>
+    + receive_salary(salary: double): void <<override>>
+    + write_code(language: std::string): void
+    + add_programming_language(language: std::string): void
+    + set_current_project(project: std::string): void
+}
+
+ ' Represents employee identification badges
+class IDBadge {
+    - badge_number_: std::string
+    - issue_date_: Date
+    + IDBadge(badge_number: std::string, issue_date: Date)
+    + display_badge_info(): void
+}
+
+' Class for date management
+class Date {
+    - day_: unsigned short
+    - month_: unsigned short
+    - year_: unsigned short
+    + Date(day: unsigned short, month: unsigned short, year: unsigned short)
+    + is_valid_date(day: unsigned short, month: unsigned short, year: unsigned short): bool
+    + get_days_in_month(month: unsigned short, year: unsigned short): unsigned short
+    + print_date(): void
+    + {static} is_leap_year(year: unsigned short): bool
+}
+
+class Department {
+    - employees_: std::vector<std::shared_ptr<Employee>>
+    + Department()
+    + add_employee(employee: std::shared_ptr<Employee>): void
+    + display_employees(): void
+
+}
+
+'Inheritance: Manager and Developer inherit from Employee
+Employee <|-- Developer
+Employee <|-- Manager
+
+'Composition: Employee has an IDBadge, which has a Date
+Employee *-- IDBadge
+IDBadge *-- Date
+
+'Aggregation: Department aggregates multiple Employee objects
+Department o-- "1..*" Employee 
+
+
+}

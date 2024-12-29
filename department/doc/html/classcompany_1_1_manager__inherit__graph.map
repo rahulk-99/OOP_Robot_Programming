@@ -1,4 +1,0 @@
-<map id="company::Manager" name="company::Manager">
-<area shape="rect" id="node1" title="Represents a manager in a company, with responsibilities for supervising a team and overseeing projec..." alt="" coords="9,80,156,107"/>
-<area shape="rect" id="node2" href="$classcompany_1_1_employee.html" title="Represents an employee in the company." alt="" coords="5,5,160,32"/>
-</map>

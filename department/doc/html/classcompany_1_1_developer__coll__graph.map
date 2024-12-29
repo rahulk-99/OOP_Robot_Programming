@@ -1,5 +1,0 @@
-<map id="company::Developer" name="company::Developer">
-<area shape="rect" id="node1" title="Represents a software developer in the company, inheriting from the Employee base class." alt="" coords="5,171,161,197"/>
-<area shape="rect" id="node2" href="$classcompany_1_1_employee.html" title="Represents an employee in the company." alt="" coords="6,95,161,121"/>
-<area shape="rect" id="node3" href="$classcompany_1_1_i_d_badge.html" title="Represents an identification badge assigned to an employee in the company." alt="" coords="11,5,155,32"/>
-</map>
